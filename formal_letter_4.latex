@@ -29,6 +29,7 @@
 \usepackage[T1]{fontenc} % Required for accented characters
 \usepackage{fancyhdr}
 
+\raggedbottom
 
 % Create a new command for the horizontal rule in the document which allows thickness specification
 \makeatletter
@@ -73,7 +74,8 @@
 
 \usepackage[margin=1in]{geometry}
 
-\setlength{\topmargin}{-2in}
+% Better to set \raggedbottom above
+%\setlength{\topmargin}{-2in}
 
 %----------------------------------------------------------------------------------------
 %	SENDER INFORMATION

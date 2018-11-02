@@ -223,12 +223,12 @@ $endif$
 % Create title block
 
 
-\title{\textbf{225 Park Place Board Of Directors}\\\vspace{0.25em}{\large Meeting Agenda, $date$}}
-
-$if(author)$
-\author{$for(author)$$author$$sep$ \and $endfor$}
+\title{\textbf{225 Park Place Board Of Directors}\\\vspace{0.25em}
+$if(annual)$
+{\large Annual Meeting Agenda, $annual$}}
+$else$
+{\large Meeting Agenda, $date$}}
 $endif$
-\date{$date$}
 $for(header-includes)$
 $header-includes$
 $endfor$
@@ -236,16 +236,7 @@ $endfor$
 \makeatletter
 \def\maketitle{%
 \parbox[c][6em][c]{\linewidth}{\centering {\Large \textbf{\@title}}
-$if(author)$
-\parbox[c][3em]{\linewidth}{\centering {\@author, 
-$if(version)$
-Version $version$ (\@date)
-$else$
-\@date
-$endif$
-}
-}
-$endif$
+
 \par}
 }
 \makeatother

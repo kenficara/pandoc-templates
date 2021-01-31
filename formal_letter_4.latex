@@ -147,7 +147,7 @@ $date$\hspace*{\fill}\par} % Print today's date, remove \today to not display it
 $else$
 \today\hspace*{\fill}\par} % Print today's date, remove \today to not display it
 $endif$
-\vspace{1em} % White space after the to address
+%\vspace{1em} % White space after the to address
 {\raggedright \toname \\ \toaddress \par} % Print the to name and address
 \vspace{1em} % White space after the to address
 \noindent #1 % Print the opening line

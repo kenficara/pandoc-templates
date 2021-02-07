@@ -27,6 +27,8 @@ $endif$
 % Harmonica modifications
 %----------------------------------------------------------------------
 
+\usepackage{csquotes}
+
 % Caption formatting
 
 \usepackage[
